@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalsSounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qsx-k2-CBg">
+                                <rect key="frame" x="34" y="159" width="346" height="578"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CDd-8J-e3a">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="KuG-g3-80x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="aD5-uE-Gbf">
+                                        <rect key="frame" x="0.0" y="90" width="346" height="488"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jNd-Gt-5cl">
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="150.66666666666666"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-ru-YAr">
+                                                        <rect key="frame" x="0.0" y="17.333333333333314" width="180" height="116"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="180" id="zC3-00-DSi"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="cao"/>
+                                                        <connections>
+                                                            <action selector="playDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XOs-yH-gtM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ES6-K4-7hQ">
+                                                        <rect key="frame" x="180" y="17.333333333333314" width="166" height="116"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="gato"/>
+                                                        <connections>
+                                                            <action selector="playCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Dj-6c-oIx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="wxI-8v-EkW">
+                                                <rect key="frame" x="0.0" y="150.66666666666669" width="346" height="168.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx2-Yg-6nf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="168.66666666666666"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="leao"/>
+                                                        <connections>
+                                                            <action selector="playLion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ecw-Jf-QKQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5w-dQ-pgd">
+                                                        <rect key="frame" x="173" y="0.0" width="173" height="168.66666666666666"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="macaco"/>
+                                                        <connections>
+                                                            <action selector="playMonkey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOH-hs-owb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="p9l-dx-XE8">
+                                                <rect key="frame" x="0.0" y="319.33333333333337" width="346" height="168.66666666666663"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vws-1P-lbl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="168.66666666666666"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="ovelha"/>
+                                                        <connections>
+                                                            <action selector="playSheep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JX7-1L-4f2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKm-z7-1i0">
+                                                        <rect key="frame" x="173" y="0.0" width="173" height="168.66666666666666"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="vaca"/>
+                                                        <connections>
+                                                            <action selector="playCown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pK-Cf-vMs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9529411793" green="0.91372549530000002" blue="0.74509805439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qsx-k2-CBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="QVM-KL-4Bt"/>
+                            <constraint firstItem="qsx-k2-CBg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="gTu-b5-Qvi"/>
+                            <constraint firstItem="qsx-k2-CBg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kRZ-Je-OB3"/>
+                            <constraint firstItem="qsx-k2-CBg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mlH-BB-si2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cao" width="108" height="102"/>
+        <image name="gato" width="113" height="102"/>
+        <image name="leao" width="108" height="101"/>
+        <image name="logo" width="263" height="72"/>
+        <image name="macaco" width="108" height="116"/>
+        <image name="ovelha" width="113" height="101"/>
+        <image name="vaca" width="113" height="116"/>
+    </resources>
+</document>
